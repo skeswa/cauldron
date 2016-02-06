@@ -4,11 +4,12 @@
   "description": "Collaborative coding, made magical.",
   "main": "index.js",
   "scripts": {
-    "cli:dev":    "./build/scripts/cli-clean.sh && ./build/scripts/cli-build.sh && ./build/scripts/cli-dev.sh",
-    "cli:clean":  "./build/scripts/cli-clean.sh",
-    "cli:build":  "./build/scripts/cli-build.sh",
-    "web:dev":    "./build/scripts/web-dev.sh",
-    "web:clean":  "./build/scripts/web-clean.sh"
+    "cli:dev":      "./build/scripts/cli-clean.sh && ./build/scripts/cli-build.sh && ./build/scripts/cli-dev.sh",
+    "cli:clean":    "./build/scripts/cli-clean.sh",
+    "cli:build":    "./build/scripts/cli-build.sh",
+    "cli:release":  "./build/scripts/cli-release.sh",
+    "web:dev":      "./build/scripts/web-dev.sh",
+    "web:clean":    "./build/scripts/web-clean.sh"
   },
   "keywords": [
     "collaborative",

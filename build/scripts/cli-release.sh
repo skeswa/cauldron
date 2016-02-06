@@ -13,15 +13,13 @@ cp -a "$base_dir/cli/src/." .
 # Spin up the go container to compile our src
 docker run \
   --rm \
-  -v "$PWD":/usr/src/cli \
-  -w /usr/src/cli \
-  tcnksm/gox:1.5 \
-  /bin/bash \
-  -c "go get -d -v && gox -osarch=\"darwin/amd64 windows/amd64\" -parallel=2" && \
+  -v "$PWD":/usr/src/cauldron \
+  -w /usr/src/cauldron \
+  tcnksm/gox:1.5 && \
   # If that worked, create the dist folder
   mkdir -p ../dist && \
   # If that worked, move the compiled executable to the dist folder
-  mv ./cli_* ../dist
+  mv ./cauldron_* ../dist
 # Get rid of the tmp dir
 cd ..
 rm -rf "$tmp_dir"
